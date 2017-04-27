@@ -1,0 +1,294 @@
+/* 
+    Created on : Jul 12, 2015, 3:12:17 PM
+    Author     : Robert Vines
+*/
+
+/**** Header ******************************************************************/
+
+/* Image for header */
+#logo { 
+    position: fixed;
+    float: left;
+    width: 240px;
+    height: 58px;
+    top: 0px;
+    left: 0px;
+    }
+    
+/* Layout for logout link on every page*/    
+#logout {
+    font: bold 17px palatino linotype, serif;
+    float: right;
+    position: absolute;
+    top: 15px;
+    left: 92%;
+}
+
+/* Remove logout link's hyperlink setup  */
+#logout a {
+    text-decoration: none; 
+}
+
+/* Blue line at the top of every page */
+hr {
+    background-color: #295190;
+    border: none;
+    position: relative;
+    padding-top: 6px;
+    margin-top: 60px;
+    margin-left: -8;
+    margin-right: -8;
+   }
+
+/* Blue background for navigation section */
+#navigation {
+    top: 60px;
+    left: 0px;
+    position: fixed;
+    width: 13%;
+    height: 100%;
+    background-color: #295190;
+}
+
+/* Remove ul stlying and positioning list for nav bar */
+#navigation ul {
+    padding-left: 8px;
+    padding-right: 8px;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #295190;
+    font: bold 16px palatino linotype, serif;
+}
+
+/* Adding bottom border and padding for nav bar */
+#navigation li {
+    border-bottom:1px solid #bbb;
+    padding-bottom: 5px;
+}
+
+/* Remove hyperlink styling, color test */
+#navigation a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+/*grey box when hovering over button*/
+li a:hover:not(.active) {
+    background-color: #B0B0B0;
+}
+
+/**** Page Setup **************************************************************/
+
+/* Every page grey background */
+#page {
+    top: 66px;
+    left: 0px;
+    background: none repeat 0 0 #D0D0D0;
+    height: 90%;
+    padding-left: 20px;
+    margin-left: 13%;
+    margin-right: auto;
+    position: fixed;
+    width: 90%;   
+    overflow-y: scroll;
+    }
+    
+/* Postion body(text portion) of each page */
+#body {
+    padding-left: 25px;
+    padding-bottom: 25px;
+    position: relative;
+    width: 90%;
+    float: left;
+    font: 14px palatino linotype, serif;
+    background: none repeat scroll 0 0 #D0D0D0;
+    }
+
+/* Title for the top of every page */
+h1 {
+    font-size: 30px;
+    font-family: palatino linotype, serif;
+    display:inline-block;
+}
+
+/* Left column of pages */
+.column1{
+    float: left;
+}
+
+/* right column of pages */
+.column2{
+    left: 40px;
+    position: relative;
+}
+  
+/**** Login Page **************************************************************/
+
+/* Set up grey backgroung for login page */
+#loginPage {
+    top: 66px;
+    left:0;
+    background: none repeat 0 0 #D0D0D0;
+    width: 100%;   
+    height: 90%;
+    position: fixed;
+    overflow-y: scroll;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Login page, white box */
+#loginBox {
+    position: relative;
+    top: 80px;
+    margin: auto;
+    width: 45%;
+    height: 250px;
+    background: #FFFFFF;
+    border: 3px solid #9D9D9D;
+    }
+
+/* Login page, bold text */
+#loginHeader {
+    padding-top: 15px;
+    font: bold 17px palatino linotype, serif; 
+    text-align: center;
+    }
+
+/* Login page, textbox text */
+#loginText {
+    padding-left: 15px;
+    font: 14px palatino linotype, serif; 
+    text-align: center;
+    }
+
+/**** Tables ******************************************************************/   
+   
+/*Reomve border on tables*/
+table{ 
+    border-collapse: collapse;
+    }
+    
+/*Form table backgrounds to white*/
+#formTable td{
+    background-color: #D0D0D0;    
+    }
+    
+/*Formatting text in body of tables*/
+tbody {
+    font: 14px palatino linotype, serif; 
+    }
+  
+/* Table body formating */
+td {
+    border-collapse: collapse; 
+    padding: 4px 4px 4px 3px;
+    }
+
+/*format table in create alumni*/
+th {
+    color: white;
+    background-color: #295190;
+    font-size: 16px;
+    padding-right: 3px;
+    font-weight: bold;
+    border-collapse: collapse;
+    border: 0px;  
+    /*top, right, bottom, left*/
+    padding: 3px 4px 3px 3px; 
+    }
+    
+/* Change color of every other row in tables */
+tbody tr:nth-child(even){
+    background-color: #DEE8F5;
+    }
+
+/* Every odd table row is white */
+tbody tr:nth-child(odd){
+    background-color: white;
+    }
+  
+/**** Alumni ******************************************************************/    
+    
+/*tab box formatting*/
+.tabs {
+    position: relative;   
+    min-height: 170px; /* This part sucks */
+    clear: both;
+    margin: 25px 0;
+    }
+
+/*tab button positioning*/
+.tab {
+    float: left;
+    }
+
+/*tab button formatting*/
+.tab label {
+    background: #eee; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    margin-left: -1px; 
+    position: relative;
+    left: 0px; 
+    }
+
+/*remove radio button format*/
+.tab [type=radio] {
+    display: none;   
+    }
+
+/*formatting tab box*/
+.content {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    background: #E8E8E8;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    border: 1px solid #808080; 
+    width: 90%;
+    }
+
+/*box 2 checked*/
+[type=radio]:checked ~ label {
+    background: white;
+    border-bottom: 1px solid white;
+    z-index: 2;
+    }
+
+/*box 1 checked*/
+[type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+    }   
+    
+/**** Buttons *****************************************************************/
+
+/*Buttons*/
+#button {
+    border-radius: 5px;
+    font-family: serif;
+    color: #ffffff;
+    font-size: 14px;
+    background: #4d5052;
+    padding: 4px 6px 4px 6px;
+    text-decoration: none;
+    }
+    
+/* Changes button color when hovering over add buttons */
+#button:hover {
+    background: #4F81BD;
+    }
+
+/**** Account Pages ***********************************************************/    
+    
+/* Columns for Create/Edit account department checkboxes */   
+#checkbox {
+    -webkit-column-count: 4; /* Chrome, Safari, Opera */
+    -moz-column-count: 4; /* Firefox */
+    column-count: 4;
+    width: 60%;
+    }
